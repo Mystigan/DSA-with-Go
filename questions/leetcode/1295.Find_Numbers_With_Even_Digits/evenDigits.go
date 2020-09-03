@@ -1,4 +1,4 @@
-package array
+package leetcode
 
 func findNumbers(nums []int) int {
 	numbersWithEvenDigits := 0
