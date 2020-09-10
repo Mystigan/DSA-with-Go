@@ -8,11 +8,8 @@ package leetcode
  * }
  */
 func deleteDuplicates(head *ListNode) *ListNode {
-	if head == nil || head.Next == nil {
-		return head
-	}
 	current := head
-	for current.Next != nil {
+	for current != nil && current.Next != nil {
 		if current.Val == current.Next.Val {
 			current.Next = current.Next.Next
 		} else {
