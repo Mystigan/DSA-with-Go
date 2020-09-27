@@ -17,7 +17,7 @@
  Output: "Sao Paulo" 
  Explanation: Starting at "London" city you will reach "Sao Paulo" city which is the destination city. Your trip consist of: "London" -> "New  York" -> "Lima" -> "Sao Paulo".
  ```
- ### Example 1
+ ### Example 2
  ```c
  Input: paths = [["B","C"],["D","B"],["C","A"]]
  Output: "A"
