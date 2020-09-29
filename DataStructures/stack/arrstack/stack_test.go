@@ -56,4 +56,16 @@ func TestStack(t *testing.T) {
 			t.Errorf("got: %v, want: %v", got, want)
 		}
 	})
+	st.Pop()
+	st.Pop()
+	st.Pop()
+	t.Run("test Pop on empty stack", func(t *testing.T) {
+		// want := interface{}(1)
+		want := interface{}(nil)
+		got, _ := st.Pop()
+
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got: %v, want: %v", got, want)
+		}
+	})
 }
