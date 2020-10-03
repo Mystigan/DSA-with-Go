@@ -31,4 +31,14 @@ func TestSort(t *testing.T) {
 			t.Errorf("got: %v, want: %v", got, want)
 		}
 	})
+	t.Run("test empty slice", func(t *testing.T) {
+		want := []int(nil)
+		got, err := Sort([]int{}, "asc")
+		if err != nil {
+			fmt.Printf("error: %v\n", err)
+		}
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("got: %v, want: %v", got, want)
+		}
+	})
 }

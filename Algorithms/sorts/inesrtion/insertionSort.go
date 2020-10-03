@@ -5,9 +5,12 @@ import (
 	"strings"
 )
 
-// Takes a slice of integers and sorting order, sorts them using the insertion sort algorithm and returns the sorted slice. Returns an error if invalid sorting order is specified.
+// Takes a slice of integers and sorting order, sorts them using the insertion sort algorithm and returns the sorted slice. Returns an error if input is empty or an invalid sorting order is specified.
 // Expected values for sorting order are "asc" or "desc".
 func Sort(input []int, order string) ([]int, error) {
+	if len(input) == 0 {
+		return nil, errors.New("input is empty")
+	}
 	if strings.ToLower(order) == "asc" {
 		for i, v := range input {
 			index := i
