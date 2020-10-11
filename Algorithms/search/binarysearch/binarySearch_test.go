@@ -34,6 +34,12 @@ var testCases = []struct {
 		3,
 		2,
 	},
+	{
+		"searching in an empty slice",
+		[]int{},
+		3,
+		-1,
+	},
 }
 
 func TestBinarySearch(t *testing.T) {
