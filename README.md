@@ -5,4 +5,4 @@
 
 ## Contributing
  - For suggestions related to improving code quality, better approaches to solve the problems, improving tests, errors or mistakes found, please feel free to open an issue.
- - Any and all constructive criticism that would help improve the quality of this repo and me as an engineer, is welcome.,.
+ - Any and all constructive criticism that would help improve the quality of this repo and me as an engineer, is welcome.
